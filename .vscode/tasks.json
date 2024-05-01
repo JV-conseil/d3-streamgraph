@@ -1,0 +1,27 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "type": "shell",
+  "presentation": {
+    "panel": "new",
+    "focus": true,
+    "revealProblems": "onProblem",
+  },
+  "problemMatcher": [],
+  "tasks": [
+    {
+      "label": "deploy",
+      "command": "npm run build && npm run deploy",
+      "detail": "Deploy to GitHub pages https://jv-conseil.github.io/d3js-cluster"
+    },
+    {
+      "label": "start",
+      "command": "npm run dev -- --open",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "detail": "npm run dev -- --open"
+    },
+  ]
+}

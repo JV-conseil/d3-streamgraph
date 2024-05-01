@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "foxundermoon.shell-format",
+    "timonwong.shellcheck",
+    "xabikos.javascriptsnippets",
+    "yzhang.markdown-all-in-one",
+    "budparr.language-hugo-vscode"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  //
+  // snippet generator
+  //
+  // https://snippet-generator.app/?description=Code+snippet+for+JS+class+definition.&tabtrigger=class&snippet=%2F**%0A+*+%241%0A+*+%40class%0A+*+%40param+%7Bstring%5B%5D%7D+order+-+Array+for+sorting+columns.%0A+*+%40param+%7Bstring%7D+domID+-+domID+of+Table.%0A+*%2F%0Aclass+%24%7B1%3AjsGenericClass%7D+%7B%0A++constructor+%28order%3D%5B%5D%2C+domID%3D%27%23%241%27%29+%7B%0A++++this.domID+%3D+domID%0A++++this.order+%3D+order%0A++%7D%0A%0A++getID+%28%29+%7B%0A++++const+loc+%3D+new+URL%28window.location.href%29+%7C%7C+null%0A++++if+%28loc+%3D%3D%3D+null%29+return+null%0A++++console.debug%28%27getID%27%2C+loc%29%0A++++return+loc%0A++%7D%0A%0A++init+%28%29+%7B%0A++++if+%28%24%28this.domID%29.length+%3D%3D%3D+0%29+return+null++%2F**+%3C--+no+domID+*%2F%0A++++%2F**+Do+something+here+*%2F%0A++%7D%0A%0A++run+%28%29+%7B%0A++++if+%28this.init%28%29+%3D%3D%3D+null%29+return+null%0A++++const+self+%3D+this%0A++++%2F**+Do+something+here+*%2F%0A++%7D%0A%7D&mode=vscode
+  //
+  "New class: class jsGenericClass {}": {
+    "scope": "javascript",
+    "prefix": "class",
+    "body": [
+      "/**",
+      " * $1",
+      " * @class",
+      " * @param {string[]} order - Array for sorting columns.",
+      " * @param {string} domID - domID of Table.",
+      " */",
+      "class ${1:jsGenericClass} {",
+      "  constructor (order=[], domID='#$1') {",
+      "    this.domID = domID",
+      "    this.order = order",
+      "  }",
+      "",
+      "  getID () {",
+      "    const loc = new URL(window.location.href) || null",
+      "    if (loc === null) return null",
+      "    console.debug('getID', loc)",
+      "    return loc",
+      "  }",
+      "",
+      "  init () {",
+      "    if ($(this.domID).length === 0) return null  /** <-- no domID */",
+      "    /** Do something here */",
+      "  }",
+      "",
+      "  run () {",
+      "    if (this.init() === null) return null",
+      "    const self = this",
+      "    /** Do something here */",
+      "  }",
+      "}"
+    ],
+    "description": "Code snippet for JS class definition."
+  }
+}

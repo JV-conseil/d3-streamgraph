@@ -1,0 +1,90 @@
+{
+    // Place your workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and description.
+    // Add comma separated ids of the languages where the snippet is applicable in the scope field.
+    // If scope is left empty or omitted, the snippet gets applied to all languages.
+    // The prefix is what is used to trigger the snippet and the body will be expanded and inserted.
+    // Possible variables are: $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    //
+    // Example:
+    // --------
+    //
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    //
+    // Documentation:
+    // --------------
+    // - https://code.visualstudio.com/docs/editor/userdefinedsnippets
+    // - https://github.com/cstrap/python-snippets/blob/master/snippets/base.json
+    // - https://snippet-generator.app
+    //
+    "New function: new_function(self, *args, **kwargs):try:except:": {
+        "scope": "python",
+        "prefix": "def",
+        "body": [
+            "def ${1:new_function}(self, *args, **kwargs) -> int:",
+            "\t\" $1 \"",
+            "\toutput = 0",
+            "\ttry:",
+            "\t\t\" Do something here \"",
+            "\t\t$0",
+            "\t\toutput = 1",
+            "\texcept Exception as e:",
+            "\t\tlogger.exception(e)",
+            "\tlogger.debug(\"$1: %s\", output)",
+            "\treturn output",
+        ],
+        "description": "Python code snippet to create a new function"
+    },
+    "New class: NewClass:": {
+        "scope": "python",
+        "prefix": "class",
+        "body": [
+            "class ${1:NewClass}:",
+            "    \"\"\"${1}",
+            "",
+            "    My ${1} does this, this and this...",
+            "",
+            "    Usage:",
+            "",
+            "    ```py",
+            "    from .new_class import ${1}",
+            "",
+            "    new_class = ${1}()",
+            "    do = new_class()",
+            "    ```",
+            "    \"\"\"",
+            "",
+            "    def __init__(self, attribute: str = \"\", **kwargs):",
+            "        try:",
+            "            assert attribute, f\"${1} attribute={attribute} is not valid\"",
+            "            self.attribute = attribute",
+            "        except Exception as e:",
+            "            logger.exception(e)",
+            "        logger.debug(\"%s: %s\", self.__class__.__name__, logger_json(self.__dict__))",
+            "",
+            "    def new_function(self, *args, **kwargs) -> int:",
+            "        \"new_function\"",
+            "        output = 0",
+            "        try:",
+            "            \"Do something here\"",
+            "",
+            "            output = 1",
+            "        except Exception as e:",
+            "            logger.exception(e)",
+            "        logger.debug(\"new_function: %s\", output)",
+            "        return output",
+            "",
+            "    def __call__(self, *args, **kwargs) -> int:",
+            "        return self.new_function(*args, **kwargs)"
+        ],
+        "description": "Python code snippet to create a new class"
+    },
+}

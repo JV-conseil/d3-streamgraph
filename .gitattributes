@@ -1,0 +1,16 @@
+# Configuring Git Large File Storage
+#
+# git lfs track private/**/*.gif
+# git lfs track {"*.gz","*.csv"}
+#
+# Documentation
+# ------------
+# - https://git-scm.com/docs/gitattributes
+# - https://docs.github.com/fr/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+# - https://confluence.atlassian.com/bbkb/add-commonly-used-binaries-to-git-lfs-1188409676.html
+#
+# *.pdf filter=lfs diff=lfs merge=lfs -text
+# *.xlsx filter=lfs diff=lfs merge=lfs -text
+# *.zip filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

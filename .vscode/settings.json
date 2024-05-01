@@ -1,0 +1,62 @@
+{
+  "[css][scss][less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.bracketPairColorization.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.matchBrackets": "always",
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "files.associations": {
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+    "**/templates/*": "django-txt",
+    "**/templates/*.html": "django-html",
+    "*.html": "html"
+  },
+  "files.exclude": {
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/__pycache__": true,
+    "**/lib": true,
+    "**/node_modules/**": true,
+    "cache/**/joblib": true
+  },
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+  "html.format.unformatted": "",
+  "shellcheck.logLevel": "trace",
+  "shellformat.effectLanguages": [
+    "shellscript",
+    "dockerfile",
+    "dotenv",
+    "hosts",
+    "jvmoptions",
+    "ignore",
+    "gitignore",
+    "properties",
+    "spring-boot-properties",
+    "azcli",
+    "bats"
+  ],
+  "shellformat.path": "/opt/homebrew/bin/shfmt",
+  "shellformat.useEditorConfig": true,
+  "task.allowAutomaticTasks": "on",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.defaultProfile.windows": "bash",
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+}
