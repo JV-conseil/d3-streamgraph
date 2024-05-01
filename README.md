@@ -56,3 +56,5 @@ Here are some ideas to get you started:
 [Python]: https://www.python.org/downloads/release/python-3110/
 [PostgreSQL Cheat Sheet]: https://gist.github.com/JV-conseil/179e6306ae3be1dfcea0fb697f9cd9d2#file-postgresqlcheatsheet-md
 [Git Cheat Sheet]: https://gist.github.com/JV-conseil/179e6306ae3be1dfcea0fb697f9cd9d2#file-gitcheatsheet-md
+
+<https://hrishikeshpathak.com/blog/svelte-gh-pages/>
