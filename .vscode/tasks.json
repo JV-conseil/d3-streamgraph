@@ -13,7 +13,7 @@
     {
       "label": "deploy",
       "command": "npm run build && npm run deploy",
-      "detail": "Deploy to GitHub pages https://jv-conseil.github.io/d3js-cluster"
+      "detail": "Deploy to GitHub pages https://jv-conseil.github.io/d3-streamgraph"
     },
     {
       "label": "start",
