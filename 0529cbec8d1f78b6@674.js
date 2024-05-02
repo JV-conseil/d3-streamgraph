@@ -130,8 +130,11 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
 
+  // const src = "./files/agg_nbcalls_cluster_01_05_2024.csv"
+  const src = "https://gist.githubusercontent.com/JV-conseil/10d70b446fe0fc725d309b31302b0dde/raw/62a1388c11633ac0499f99ea3c292cea6f1fa71a/agg_nbcalls_cluster_01_05_2024.csv"
+
   const fileAttachments = new Map([
-    ["dataset.csv", { url: new URL("./files/agg_nbcalls_cluster_01_05_2024.csv", import.meta.url), mimeType: "text/csv", toString }]
+    ["dataset.csv", { url: new URL(src, import.meta.url), mimeType: "text/csv", toString }]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
